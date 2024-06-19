@@ -1,0 +1,24 @@
+@startuml
+participant User
+participant TextEditor
+participant File
+
+User -> TextEditor: создать новый файл
+TextEditor -> File: создать новый файл
+TextEditor -> User: файл создан
+
+User -> TextEditor: открыть файл
+TextEditor -> File: открыть файл
+TextEditor -> User: файл открыт
+
+User -> TextEditor: редактировать файл
+TextEditor -> User: отобразить файл для редактирования
+
+User -> TextEditor: сохранить файл
+TextEditor -> File: сохранить файл
+TextEditor -> User: файл сохранен
+
+User -> TextEditor: печать файла
+TextEditor -> User: файл отправлен на печать
+
+@enduml
