@@ -1,0 +1,11 @@
+@startuml
+node User
+node TextEditor
+node File
+node Printer
+
+User -> TextEditor: взаимодействие
+TextEditor -> File: чтение/запись файлов
+TextEditor -> Printer: отправка файла на печать
+
+@enduml
